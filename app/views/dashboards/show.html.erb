@@ -1,0 +1,9 @@
+<h1>Your Dashboard</h1>
+<p>This is your personalized dashboard.</p>
+
+
+<% if Current.user %>
+<%= button_to "Logout", session_path, method: :delete, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+<% else %>
+<%= button_to "Login", new_session_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+<% end %>

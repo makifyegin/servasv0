@@ -1,7 +1,7 @@
 <%= tag.div(flash[:alert], class: 'text-red-500') if flash[:alert] %>
 <%= tag.div(flash[:notice], class: 'text-green-500') if flash[:notice] %>
 
-        <div class="signup">
+        <div class="signup w-[29.375rem] h-[35.3125rem] sm:w-auto sm:h-auto bg-red-500 mx-auto">
           <div class="signup-header flex">
             <img class="" src="<%= image_url 'image.png' %>" alt="Logo" class="mx-auto">
             <div class="located-in flex">
@@ -17,10 +17,12 @@
           </div>
 
           <p>Start your cultural journey</p>
+          <p>Let's build peacefull world</p>
           
 
           
           <div>
+            <p>Email</p>
                 <%= form_with url: session_path, class: "space-y-4" do |form| %>
                   <div>
                     <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username",
@@ -28,16 +30,18 @@
                       class: "" %>
                   </div>
                   <div>
+                    <p>Password</p>
                     <%= form.password_field :password, required: true, autocomplete: "current-password",
                       placeholder: "Enter your password", maxlength: 72,
                       class: "" %>
                   </div>
-
-                  <%= form.submit "Sign in", class: "w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600" %>
-                <% end %>
-
+                  
                 <div class="">
                   <%= link_to "Forgot password?", new_password_path, class: "" %>
                 </div>
+
+                  <%= form.submit "Log in", class: "w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600" %>
+                <% end %>
+
       </div>
 </div>

@@ -1,0 +1,7 @@
+{
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "editor.formatOnSave": true,
+  "ruby.format": "rubocop"
+}

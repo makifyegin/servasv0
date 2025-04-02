@@ -1,13 +1,9 @@
-<% password_digest = BCrypt::Password.create("password") %>
-
 one:
   email_address: one@example.com
-  password_digest: <%= password_digest %>
+  password_digest: <%= BCrypt::Password.create("password") %>
+  country_id: 1  # Ensure this matches the actual country ID
 
 two:
   email_address: two@example.com
-  password_digest: <%= password_digest %>
-
-three:
-  email_address: three@example.com
-  password_digest: <%= password_digest %>
+  password_digest: <%= BCrypt::Password.create("password") %>
+  country_id: 2  # Ensure this matches the actual country ID

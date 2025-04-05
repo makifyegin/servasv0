@@ -38,11 +38,6 @@ gem "kamal", require: false
 gem "rubocop", require: false
 
 
-
-
-# Tailwind CSS
-gem "tailwindcss-rails"
-
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
 gem "thruster", require: false
 

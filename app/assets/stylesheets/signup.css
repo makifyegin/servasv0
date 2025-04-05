@@ -1,0 +1,184 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kablammo&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Reset for Inputs, Buttons, and Select */
+button,
+input,
+select {
+    border: none;
+    /* Remove default borders */
+    outline: none;
+    /* Remove outline on focus */
+    box-shadow: none;
+    /* Remove box-shadow */
+    padding: 0;
+}
+
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "JetBrains Mono", monospace;
+    background-color: #FFE5B4;
+    /* Soft background color */
+    margin: 1rem;
+    /* Add margin around the body */
+    padding: 0;
+    /* Remove default body padding */
+}
+
+/* Main Container Styling (Login Card) */
+.login-card {
+    width: 100%;
+    max-width: 30rem;
+    /* Restrict maximum width */
+    height: auto;
+    /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+/* Logo Styling */
+img {
+    width: 168px;
+    height: 66px;
+}
+
+/* Signup Header Styling (Logo + Location Dropdown) */
+.signup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Vertically align logo and location */
+    gap: 3rem;
+}
+
+/* Located In Section (Text + Dropdown) */
+.located-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Styling for the 'I’m located in:' text */
+.located-in p {
+    white-space: nowrap;
+    /* Prevent the text from wrapping to a new line */
+    font-size: 0.85rem;
+
+}
+
+/* Styling for the country select dropdown */
+.located-in select {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    /* Make the select dropdown fill the container */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    color: black;
+}
+
+/* Input and Button Styling (Same width for consistency) */
+button,
+input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    /* Ensure full width */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    color: black;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+
+}
+
+/* Button Specific Styling */
+button {
+    background-color: #F05323;
+    /* Orange button background */
+    color: white;
+    /* Button text color */
+    font-size: 1.2rem;
+    font-weight: 700;
+    /* Extra bold */
+    margin: 0 auto;
+    /* Center the button */
+}
+
+/* Forgot Password Link Styling */
+
+
+/* Form Group Styling (Spacing between form elements) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.form-group p {
+    margin-bottom: 0.1rem;
+}
+
+/* Footer Links Styling (Help, Privacy, Terms) */
+.footer-links {
+    display: flex;
+    gap: 0.5rem;
+    font-size: small;
+}
+
+/* Footer Link Styling */
+.footer-links a {
+    text-decoration: none;
+    color: #8E8E8E;
+    /* Light gray color for footer links */
+}
+
+/* Additional Layout Spacing for Sections */
+.signup-header,
+.login-options,
+.login-form,
+.footer-links {
+    margin: 1rem;
+}
+
+/* Button Styling with Extra Bold Text */
+.btn-submit {
+    font-size: 1.2rem;
+    font-weight: 700;
+    /* Extra bold */
+    margin: 0 auto;
+    /* Center the button */
+}
+
+
+
+.forgot-password {
+    font-weight: 200;
+    color: #153AB4;
+    margin-top: 0.6rem;
+    margin-left: 0.2rem;
+    font-size: small;
+}
+
+
+.login-options .signup-functions {
+    font-weight: 400;
+    font-size: 0.81215rem;
+    margin-bottom: 0;
+}
+
+
+.login-options .continue-options {
+    color: #958D8D;
+    font-size: 0.5625rem;
+}
